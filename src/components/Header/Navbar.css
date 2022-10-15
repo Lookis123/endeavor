@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:4.5rem;
+  padding-inline: 3.5rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar-sticky {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown 0.1s ease;
+}
+
+.navbar--logo-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.navbar--link {
+  display: flex;
+  list-style: none;
+}
+
+.navbar--link-item {
+  margin: 0.4rem 1rem 0 0;
+  padding: 0 0.3rem;
+  cursor: pointer;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0rem);
+  }
+}
